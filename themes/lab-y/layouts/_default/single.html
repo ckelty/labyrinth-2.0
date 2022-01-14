@@ -16,7 +16,9 @@
     <div class="article-text">
       <h1 class="article-title">{{ .Page.Title }} </h1>
       {{- partial "authors.html" . -}}
-      <p>{{ .Content }}</p>
+      <div class="article-content">
+        {{ .Content }}
+      </div>
     </div>
   </article>
 </main>

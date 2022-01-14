@@ -1,6 +1,6 @@
 <section class="category">
   {{ if .Params.Categories }}
 <!-- could do if terms is greater than 1, use commas and and -->
-  <p> Part of  the   {{ range (.GetTerms "categories") }}<span class="category"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span> {{ end }} maze.</p>
+  <p> Part of the {{ range (.GetTerms "categories") }}<span class="category"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span> {{ end }} maze.</p>
 </section>
 {{ end }}

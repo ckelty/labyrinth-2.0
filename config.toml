@@ -59,7 +59,7 @@ description = 'Exploring the Maze of Nature in Los Angeles'
 
 [[menu.main]]
   identifier = 'podcasts'
-  name = 'Sound Maze'
+  name = 'Podcast Maze'
   title = 'podcasts'
   url = '/podcast/'
   weight = -120

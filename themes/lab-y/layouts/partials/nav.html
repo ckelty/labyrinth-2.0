@@ -3,10 +3,11 @@
     <label class="menu__btn" for="menu__toggle">
       <span></span>
     </label>
-
     <ul class="menu__box">
       {{ $currentPage := . }}
+      
       <li class="menu_title">Some Mazes:</li>
+
       {{ range .Site.Menus.main }}
       <li><a class="menu__item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
       {{ end}}

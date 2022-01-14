@@ -7,8 +7,13 @@
      {{ end }}
      <section class ="category-title">
        {{ if .Params.Categories }}
-  <h1> You are in the {{ range (.GetTerms "categories") }} <a href="{{ .Permalink }}"><span class="tag">{{ .Data.Term }}</span></a> {{ end }} maze. </h1>
-  <h3> You see passages leading to: </h3>   {{- partial "tags.html" . -}}
+       <h1> You are in the {{ range (.GetTerms "categories") }} <a href="{{ .Permalink }}"><span class="tag">{{ .Data.Term }}</span></a> {{ end }} maze. </h1>
+       {{ if .Params.Tags }}
+       <h3> You see passages leading to: </h3>
+       <div>{{- partial "tags.html" . -}}</div>
+       {{ else }}
+       <h3> There don't seem to be any passages leading away from here. </h3>
+       {{ end }}
   {{ end }}
 </section>
  </section>
