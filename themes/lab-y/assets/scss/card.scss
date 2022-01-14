@@ -1,0 +1,90 @@
+
+.card {
+    position:relative;
+    display: block;
+    height: 100%; 
+    border-radius: 5px;
+    padding: 0rem;
+    background: var(--card-background);
+    box-shadow: var(--shadow-4);
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height:auto;
+}
+
+/* code from here: https://codepen.io/seyedi/pen/zYoeLEv?editors=1100 */
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    background-color: var(--card-background);      
+    transform: translateY(100%);
+    transition: .5s ease-in-out;
+}
+
+.card:hover .card-overlay {
+    transform: translateY(0);
+}
+
+.card-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 0.8em;
+    background-color: var(--card-background);
+    transform: translateY(-100%);
+    transition: .4s ease-in-out;
+}
+
+.card:hover .card-text {
+  transform: translateY(0);
+}
+
+
+.card-title {
+    font-family: "averia_serif_librebold";
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.card-author {
+    font-family: "averia_serif_libreitalic";
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+.article-tags {
+    margin: 5%;
+}
+
+
+.description {
+    margin: 10%;   
+}
+
+.first-card {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: var(--card-background-selected);
+    box-shadow: var(--shadow-2);
+}
+
+.first-card p {
+    padding: 5%;
+    font-size: 0.8em;
+}
+
+.category-title {
+    grid-area: 2/1;
+}

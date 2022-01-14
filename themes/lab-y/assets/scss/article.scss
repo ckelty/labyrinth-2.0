@@ -1,0 +1,40 @@
+.single-article {
+    background: var(--card-background);
+    box-shadow: var(--shadow-4);
+}
+
+
+.featured-image__article {
+
+}
+
+.featured-image__article img{
+    float: left;
+    width: 35%;
+    margin: 5%;
+    @media only screen and (max-width: 620px){
+        display: none;
+    }
+}
+.article-text {
+        padding-right: 10%;
+        padding-left: 10%;
+}
+.article-text p {
+    font-size: 1.3em;
+    @media only screen and (max-width: 768px){
+        font-size: 1.1em;
+    }
+
+}
+
+.article-title {
+    text-transform: uppercase;
+    hyphens: auto;
+    color: var(--accent-color);
+    @media only screen and (max-width: 620px){
+        text-align: center;
+    }
+}
+
+.article-author {}

@@ -1,0 +1,43 @@
+
+{{ define "main" }}
+{{- partial "nav.html" . -}}
+<main class="front-page">
+  <section id="homepage">
+      <div class="letterL character">
+        <label for="toggle">L</label>
+        <input type="checkbox" id="toggle" class="visually-hidden">
+ <audio preload="metadata">
+    <source src="/audio/local-concrete.mp3" type="audio/mpeg">
+  </audio>
+      </div>
+      
+      <div class="letterA character">
+        <label for="toggle">A</label>
+        <input type="checkbox" id="toggle" class="visually-hidden">
+      </div>
+      <div class="letterB character">B</div>
+      <div class="letterY character">Y</div>
+      <div class="letterR character">R</div>
+      <div class="letterI character">I</div>
+      <div class="letterN character">N</div>
+      <div class="letterT character">T</div>
+      <div class="letterH character">H</div>
+      <div class="letterP character">P</div>
+      <div class="letterR2 character">R</div>
+      <div class="letterO character">O</div>
+      <div class="letterJ character">J</div>
+      <div class="letterE character">E</div>
+      <div class="letterC character">C</div>
+      <div class="letterT2 character">T</div>
+  </section>
+  <section class="frontpage--description"><a href="/about">Explore the Maze of Nature in Los Angeles</a>
+<div>
+    {{ range .Site.Taxonomies.categories.ByCount }}
+        <li class="frontpage--menu"><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+    {{ end }}
+</div>
+</section>
+</main>
+
+{{ end }}
+

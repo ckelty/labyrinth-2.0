@@ -1,0 +1,11 @@
+ <section class="masthead2">
+   <span class= "title-description">  {{ .Site.Title }} 
+   </span>
+     {{ if (isset .Site.Params "logourl") }}
+     {{ with .Site.Params.logourl }}
+     <span class="logo"><img src="{{ . | relURL }}" alt="description from Params">
+     </span>
+   {{ end }}
+   {{ end }}
+ </section>
+ 

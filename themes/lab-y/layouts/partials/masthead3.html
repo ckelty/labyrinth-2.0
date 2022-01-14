@@ -1,0 +1,14 @@
+ <section class="masthead3">
+     {{ if (isset .Site.Params "logourl") }}
+     {{ with .Site.Params.logourl }}
+     <span class="logo"><img src="{{ . | relURL }}" alt="description from Params">
+     </span>
+     {{ end }}
+     {{ end }}
+     <section class ="category-title">
+       {{ if .Params.Categories }}
+  <h1> You are in the {{ range (.GetTerms "categories") }} <a href="{{ .Permalink }}"><span class="tag">{{ .Data.Term }}</span></a> {{ end }} maze. </h1>
+  <h3> You see passages leading to: </h3>   {{- partial "tags.html" . -}}
+  {{ end }}
+</section>
+ </section>

@@ -1,0 +1,25 @@
+<section class="card">
+    <div class="card-image">
+      <a href="{{ .Permalink }}">
+        {{ with .Params.image }}<img src="/{{ . }}" />
+      {{ end }}
+    </div>
+    <div class="card-overlay">
+      <div class="card-text">
+        <h3 class="card-title">{{ .Title }} </h3>
+        {{- partial "authors.html" . -}}
+      </div>
+      
+      <section class="">
+        <div class="description">
+          {{ if .Params.description }}
+          {{ $description := .Params.description }}
+          <p>{{$description}}</p>
+          {{ end }}
+        </div>
+    </a>
+        {{- partial "tags.html" . -}}
+      </section>
+          {{- partial "categories.html" . -}} 
+    </div>
+</section>

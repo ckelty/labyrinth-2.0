@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<main>
+  <section class ="taxonomy-title">
+<h1> You are in a passage called <span class="tag">{{ .Data.Term }}</span></h1>
+  </section>
+{{ range .Pages }}
+{{- partial "card.html" . -}}
+{{ end }}
+</main>
+
+{{ end }}
+

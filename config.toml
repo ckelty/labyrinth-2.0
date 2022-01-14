@@ -1,0 +1,72 @@
+baseURL = 'http://dev.labyrinth.garden/'
+languageCode = 'en-us'
+title = 'The Labyrinth Project'
+description = "Exploring the Maze of Nature in Los Angeles"
+theme = 'lab-y'
+
+[params]
+
+logourl = '/images/LabLogo-2.png'
+description = 'Exploring the Maze of Nature in Los Angeles'
+  [params.footer]
+    since = 2018  
+    customText = "This site does not use cookies or collect any data. It's just a website."
+    credits = "/site-credits"
+
+[taxonomies]
+    category = 'categories'
+    tag = 'tags'
+    author = 'authors'
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
+
+
+
+[[menu.main]]
+
+  identifier = 'home'
+  name = 'Entrance'
+  title = 'home'
+  url = '/'
+  weight = -150
+
+[[menu.main ]]
+
+  identifier = 'about'
+  name = 'About Maze'
+  title = 'About'
+  url = '/categories/About/'
+  weight = -140
+
+[[menu.main]]
+  identifier = 'research'
+  name = 'Research Maze'
+  title = 'research'
+  url = '/categories/Research/'
+  weight = -130
+
+[[menu.main]]
+  identifier = 'podcasts'
+  name = 'Sound Maze'
+  title = 'podcasts'
+  url = '/podcast/'
+  weight = -120
+
+[[menu.main]]
+  identifier = 'Visions'
+  name = 'Vision Maze'
+  title = 'visions'
+  url = '/categories/Visions'
+  weight = -110

@@ -1,0 +1,46 @@
+
+.masthead {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-gap: 0em;
+    max-width: 100%;
+    height: 310px;
+    place-items: center;
+    
+    .logo img {
+        width: 150px;
+    }
+    .title-description {
+        grid-row: 2/3;
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+
+
+/* experiment */
+.masthead2 {
+    
+    .title-description {
+        font-family: 'Mourier Regular';
+        color: var(--accent-color);
+	position: relative;
+	font-size: 1.5rem;
+	margin-left: 5%;
+
+
+    }
+    .logo img {
+        width: 60px;
+	display: none;
+    }
+
+}
+
+.masthead3  {
+    .logo img {
+	width: 310px;
+    }
+}

@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<main class="single">
+  
+  {{- partial "masthead3.html" . -}}
+
+
+  
+  <article class="single-article">
+    <div class="featured-image__article">
+      {{ if .Params.image }}
+      <img src="/{{ .Params.image }}" alt="{{ .Title }}" />
+      {{ end }}
+    </div>
+   
+    <div class="article-text">
+      <h1 class="article-title">{{ .Page.Title }} </h1>
+      {{- partial "authors.html" . -}}
+      <p>{{ .Content }}</p>
+    </div>
+  </article>
+</main>
+
+{{ end }}

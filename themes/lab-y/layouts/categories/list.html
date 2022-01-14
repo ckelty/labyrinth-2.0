@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<main>
+{{- partial "masthead3.html" . -}}
+<section class ="category-title">
+  <h1> Welcome to the <span class="tag">{{ .Data.Term }}</span> maze. </h1>
+</section>
+{{ range .Pages }}
+{{- partial "card.html" . -}}
+{{ end }}
+</main>
+
+
+{{ end }}
+

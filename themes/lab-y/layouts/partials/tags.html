@@ -1,0 +1,7 @@
+<div class="article-tags">
+  {{ if .Params.Tags }}
+  {{ range (.GetTerms "tags") }}
+  <span class="tag"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
+  {{ end }}
+  {{ end }}
+</div>
