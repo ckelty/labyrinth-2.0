@@ -14,9 +14,7 @@
 //        transition: all ease-in 1.5s
 //      }
 
-// .tag:hover { background: black;
-//              }
-
+// .tag:hover { background: 
 
 .tag {
   display:inline-block;
@@ -32,12 +30,11 @@
   transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
 }
 
+
 .tag:hover {
   color: #ffffff;
   background-color: var(--accent-color-darker);
   background-position: -100% 100%;
+  
 }
 
-.tag-block {
-
-}

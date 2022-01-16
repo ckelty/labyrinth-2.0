@@ -3,18 +3,8 @@
 {{- partial "nav.html" . -}}
 <main class="front-page">
   <section id="homepage">
-      <div class="letterL character">
-        <label for="toggle">L</label>
-        <input type="checkbox" id="toggle" class="visually-hidden">
- <audio preload="metadata">
-    <source src="/audio/local-concrete.mp3" type="audio/mpeg">
-  </audio>
-      </div>
-      
-      <div class="letterA character">
-        <label for="toggle">A</label>
-        <input type="checkbox" id="toggle" class="visually-hidden">
-      </div>
+      <div class="letterL character">L</div>
+      <div class="letterA character">A</div>
       <div class="letterB character">B</div>
       <div class="letterY character">Y</div>
       <div class="letterR character">R</div>
@@ -30,10 +20,11 @@
       <div class="letterC character">C</div>
       <div class="letterT2 character">T</div>
   </section>
+  
   <section class="frontpage--description"><a href="/about">Explore the Maze of Nature in Los Angeles</a>
 <div>
     {{ range .Site.Taxonomies.categories.ByCount }}
-        <li class="frontpage--menu"><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+    <li class="frontpage--menu"><a class="tag" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
     {{ end }}
 </div>
 </section>
