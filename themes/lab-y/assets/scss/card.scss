@@ -85,4 +85,16 @@
 
 .category-title {
     grid-area: 2/1;
+
+}
+
+.Podcast {
+    box-shadow: var(--shadow-3);
+    background-color: var(--card-background-other);
+    .card-overlay {
+	background-color: var(--card-background-other);
+    }
+    .card-text {
+	background-color: var(--card-background-other);
+    }
 }

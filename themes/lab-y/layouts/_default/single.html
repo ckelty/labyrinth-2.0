@@ -8,8 +8,8 @@
   
   <article class="single-article">
     <div class="featured-image__article">
-      {{ if .Params.image }}
-      <img src="/{{ .Params.image }}" alt="{{ .Title }}" />
+      {{ if .Params.images }}
+      <img src="/{{ index .Params.images 0 }}" alt="{{ .Title }}" />
       {{ end }}
     </div>
    

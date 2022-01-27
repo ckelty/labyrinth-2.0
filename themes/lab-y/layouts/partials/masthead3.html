@@ -1,7 +1,7 @@
  <section class="masthead3">
      {{ if (isset .Site.Params "logourl") }}
      {{ with .Site.Params.logourl }}
-     <span class="logo"><img src="{{ . | relURL }}" alt="description from Params">
+     <span class="logo"><img src="{{ . | relURL }}" />
      </span>
      {{ end }}
      {{ end }}

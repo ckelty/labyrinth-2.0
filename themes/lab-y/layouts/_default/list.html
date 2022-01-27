@@ -1,7 +1,8 @@
 {{ define "main" }}
 
 <main>
-{{- partial "masthead.html" . -}}
+  {{- partial "masthead.html" . -}}
+  <div class="first-card">  {{ .Content }} </div>
 {{ range .Pages }}
 {{- partial "card.html" . -}}
 {{ end }}

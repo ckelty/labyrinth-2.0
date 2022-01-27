@@ -1,8 +1,12 @@
 baseURL = 'http://dev.labyrinth.garden/'
 languageCode = 'en-us'
 title = 'The Labyrinth Project'
-description = "Exploring the Maze of Nature in Los Angeles"
+description = "Exploring the Maze of Nature in Los Angeles."
 theme = 'lab-y'
+assetDir = "static"
+images = ['/images/LabLogo-2.png']
+[markup.goldmark.renderer]
+  unsafe = true
 
 [params]
 
@@ -10,8 +14,8 @@ logourl = '/images/LabLogo-2.png'
 description = 'Exploring the Maze of Nature in Los Angeles'
   [params.footer]
     since = 2018  
-    customText = "This site does not use cookies or collect any data. It's just a website."
-    credits = "/site-credits"
+    customText = "Labyrinth is an ongoing research project housed in the Institute for Society and Genetics at UCLA. This site does not use cookies or collect any data. It's just a website."
+    credits = "/categories/credits"
 
 [taxonomies]
     category = 'categories'
@@ -45,28 +49,44 @@ description = 'Exploring the Maze of Nature in Los Angeles'
 [[menu.main ]]
 
   identifier = 'about'
-  name = 'About Maze'
+  name = 'About'
   title = 'About'
   url = '/categories/About/'
   weight = -140
 
 [[menu.main]]
   identifier = 'research'
-  name = 'Research Maze'
+  name = 'Research'
   title = 'research'
   url = '/categories/Research/'
   weight = -130
 
 [[menu.main]]
   identifier = 'podcasts'
-  name = 'Podcast Maze'
+  name = 'Podcast'
   title = 'podcasts'
   url = '/podcast/'
   weight = -120
 
 [[menu.main]]
   identifier = 'Visions'
-  name = 'Vision Maze'
+  name = 'Vision'
   title = 'visions'
   url = '/categories/Visions'
   weight = -110
+
+[[menu.main]]
+  identifier = 'Sounds'
+  name = 'Sound'
+  title = 'sounds'
+  url = '/categories/sounds'
+  weight = -115
+
+[[menu.main]]
+  identifier = 'Credits'
+  name = 'Credits'
+  title = 'credits'
+  url = '/categories/credits'
+  weight = -105
+
+

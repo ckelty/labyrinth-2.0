@@ -45,13 +45,24 @@ a:hover {
     color: var(--accent-color-tertiary);
 }
 
+blockquote {
+    font-family: 'averia_serif_libreitalic';
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding-left: 15px;
+
+}
+
+
 /* Grid */
 
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     grid-gap: 1rem;
-    place-items: center;
+    align-items: start;
+    justify-items: center;
 
 }
 
