@@ -1,12 +1,9 @@
  <section class="masthead list">
    {{ if (isset .Site.Params "logourl") }}
-    {{ with .Site.Params.logourl }}
-  <div class="logo"><img src="{{ . | relURL }}" alt="description from Params">
-    </div>
+<div class="logo"><img src="{{ .Site.Params.logourl | relURL }}" alt="{{ .Site.Params.description }}" /></div>
     {{ end }}
-    {{ end }}
-    <div class= "title-description">
+<!--    <div class= "title-description">
       <h1>  {{ .Site.Title }} </h1>
       <h3>{{ .Site.Params.description }}</h3>
-    </div>
+    </div> -->
   </section>

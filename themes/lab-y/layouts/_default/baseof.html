@@ -10,8 +10,10 @@
         <div id="content">
         {{- block "main" . }}{{- end }}
         </div>
+        {{ if .Page.IsHome }}
+        {{else}}
         {{- partial "footer.html" . -}}
-        
+        {{ end }}
 </body>
 </html>
 

@@ -9,7 +9,7 @@
     place-items: center;
     
     .logo img {
-        width: 150px;
+        width: 310px;
     }
     .title-description {
         grid-row: 2/3;
@@ -19,28 +19,21 @@
 }
 
 
-
-/* experiment */
-.masthead2 {
-    
-    .title-description {
-        font-family: 'Mourier Regular';
-        color: var(--accent-color);
-	    position: relative;
-	    font-size: 1.5rem;
-	    margin-left: 5%;
-        
-
-    }
-    .logo img {
-        width: 60px;
-	display: none;
-    }
-
-}
-
 .masthead3  {
+    display: grid;
+    place-items: center;
     .logo img {
 	width: 310px;
+	
     }
+}
+
+.category-title {
+    grid-area: 2/1;
+    @media only screen and (max-width: 880px){
+        text-align: center;
+	font-size: .8em;
+	margin-bottom: 10px;
+	}
+
 }

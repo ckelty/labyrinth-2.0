@@ -1,34 +1,24 @@
 
 {{ define "main" }}
-{{- partial "nav.html" . -}}
 <main class="front-page">
   <section id="homepage">
-      <div class="letterL character">L</div>
-      <div class="letterA character">A</div>
-      <div class="letterB character">B</div>
-      <div class="letterY character">Y</div>
-      <div class="letterR character">R</div>
-      <div class="letterI character">I</div>
-      <div class="letterN character">N</div>
-      <div class="letterT character">T</div>
-      <div class="letterH character">H</div>
-      <div class="letterP character">P</div>
-      <div class="letterR2 character">R</div>
-      <div class="letterO character">O</div>
-      <div class="letterJ character">J</div>
-      <div class="letterE character">E</div>
-      <div class="letterC character">C</div>
-      <div class="letterT2 character">T</div>
+      <div class="letterL character"><a href="/about">L</a></div>
+      <div class="letterA character"><a href="/about">A</a></div>
+      <div class="letterB character"><a href="/about">B</a></div>
+      <div class="letterY character"><a href="/about">Y</a></div>
+      <div class="letterR character"><a href="/about">R</a></div>
+      <div class="letterI character"><a href="/about">I</a></div>
+      <div class="letterN character"><a href="/about">N</a></div>
+      <div class="letterT character"><a href="/about">T</a></div>
+      <div class="letterH character"><a href="/about">H</a></div>
+      <div class="letterP character"><a href="/about">P</a></div>
+      <div class="letterR2 character"><a href="/about">R</a></div>
+      <div class="letterO character"><a href="/about">O</a></div>
+      <div class="letterJ character"><a href="/about">J</a></div>
+      <div class="letterE character"><a href="/about">E</a></div>
+      <div class="letterC character"><a href="/about">C</a></div>
+      <div class="letterT2 character"><a href="/about">T</a></div>
   </section>
-  
-  <section class="frontpage--description"><a href="/about">Explore the Maze of Nature in Los Angeles</a>
-<div>
-    {{ range .Site.Taxonomies.categories.ByCount }}
-    <li class="frontpage--menu"><a class="tag" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
-    {{ end }}
-</div>
-</section>
 </main>
-
 {{ end }}
 

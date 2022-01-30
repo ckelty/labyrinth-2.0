@@ -1,11 +1,14 @@
 $defaultTagBackgrounds: #F25C54, #F27059, #F4845F, #F79D65, #F7B267;
 $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
+$scheme1: #e23212, #f1f7ed, #7b5e7b, #227c9d, #dfbbb1;
+$scheme2:#f7f7ff, #280003, #19323c, #cb4a2a, #04b59c;
+$scheme2:#e23212, #98120b, #04b59c, #ffffff, #000000
 
 :root {
     --body-background: #fff;
-    --accent-color: #98120B;
-    --accent-color-darker: #E23212;
-    --accent-color-tertiary:#444;
+    --accent-color: #E23212;
+    --accent-color-darker: #98120B;
+    --accent-color-tertiary:#04b59c;
     --accent-color-text: #fff;
     --body-text-color: #5c5c5c;
     
@@ -23,3 +26,8 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --shadow-4:  rgba(0, 0, 0, 0.1) 0px 10px 50px;
     --shadow-5: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
+
+
+
+
+

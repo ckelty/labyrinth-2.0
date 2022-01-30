@@ -1,12 +1,85 @@
 .single-article {
     background: var(--card-background);
     box-shadow: var(--shadow-4);
+    hyphens: auto;
+    .article-author {
+	font-family:"averia_serif_libreitalic";
+	border-bottom: 1px dotted var(--accent-color-tertiary);
+	border-left: 1px dotted var(--accent-color-tertiary);
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-left: 1em;
+	margin-bottom:1em;
+	display: block;
+	float: right;
+	
+    }
+    .article-text {
+        padding-right: 10%;
+        padding-left: 10%;
+	padding-top: 10%;
+    }
+    .article-text p {
+	font-size: 1.3em;
+	@media only screen and (max-width: 768px){
+            font-size: 1.1em;
+    }
+	
+    }
+    
+    .article-title {
+	font-size: 2.5em;
+	margin-bottom:0.2em;
+	text-transform: uppercase;
+	text-align-last: right;
+	color: var(--accent-color);
+	@media only screen and (max-width: 880px){
+            text-align: center;
+	    font-size: 2em;
+	    text-align-last: center;
+	}
+    }
+    
+}
+
+
+.article-content {
+    margin-top:10%;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 1.5em;
+        font-size: 0.7em;
+
+    }
+    
+    th,
+    td {
+        text-align: left;
+        padding: 4px 8px 4px 10px;
+        border: 1px solid #000;
+	word-wrap: break-word;
+	word-break: break-all;
+    }
+
+    td {
+        vertical-align: top;
+    }
+
+    tr:nth-child(even) {
+        background-color: #aaa;
+
+    }
+
+
 }
 
 
 .featured-image__article {
-
 }
+
 
 .featured-image__article img{
     float: left;
@@ -16,31 +89,6 @@
         display: none;
     }
 }
-.article-text {
-        padding-right: 10%;
-        padding-left: 10%;
-}
-.article-text p {
-    font-size: 1.3em;
-    @media only screen and (max-width: 768px){
-        font-size: 1.1em;
-    }
-
-}
-
-.article-title {
-    text-transform: uppercase;
-    hyphens: auto;
-    color: var(--accent-color);
-    @media only screen and (max-width: 620px){
-        text-align: center;
-    }
-}
-
-.article-author {
-    font-family:"averia_serif_libreitalic";
-}
-
 
 
 .audio-player {
@@ -59,4 +107,12 @@ figcaption {
     margin-bottom: 10%;
     font-family: 'averia_serif_librelight';
     font-size: 1.6em;
+}
+
+
+
+.image-credits {
+    position: relative;
+    font-size: 0.5em;
+    float: left;
 }

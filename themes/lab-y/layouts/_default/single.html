@@ -1,26 +1,25 @@
 {{ define "main" }}
 
 <main class="single">
-  
-  {{- partial "masthead3.html" . -}}
-
-
-  
+  {{- partial "masthead3.html" . -}}  
   <article class="single-article">
     <div class="featured-image__article">
       {{ if .Params.images }}
       <img src="/{{ index .Params.images 0 }}" alt="{{ .Title }}" />
       {{ end }}
     </div>
-   
-    <div class="article-text">
-      <h1 class="article-title">{{ .Page.Title }} </h1>
-      {{- partial "authors.html" . -}}
+      <div class="article-text">
+      <div class="article-title">{{ .Page.Title }} </div>
+      <div class="article-author">{{- partial "authors.html" . -}}</div>
       <div class="article-content">
         {{ .Content }}
       </div>
     </div>
   </article>
+        {{ if .Params.imagecredits }}
+      <div class="image-credits">{{ .Params.imagecredits | safeHTML }}</div>
+      {{ end }}
+
 </main>
 
 {{ end }}

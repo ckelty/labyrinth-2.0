@@ -1,13 +1,13 @@
 <section class='card {{ if .Params.categories}}{{ delimit .Params.categories " " }}{{ end}}'>
     <div class="card-image">
       <a href="{{ .Permalink }}">
-        {{ with .Params.images }}<img src="/{{ index . 0 }}" />
+        {{ if .Params.images }}<img src="/{{ index .Params.images 0 }}" alt="Featured image for {{ .Page.Params.Title }} " />
       {{ end }}
     </div>
     <div class="card-overlay">
       <div class="card-text">
         <h3 class="card-title">{{ .Title }} </h3>
-        {{- partial "authors.html" . -}}
+<span class="card-author"> {{- partial "authors.html" . -}}</span>
       </div>
       
       <section class="card-description-tags">

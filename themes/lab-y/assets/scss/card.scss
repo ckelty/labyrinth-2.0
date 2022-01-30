@@ -54,16 +54,16 @@
   transform: translateY(0);
 }
 
-
 .card-title {
     font-family: "averia_serif_librebold";
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-decoration: none;
 }
 .card-author {
     font-family: "averia_serif_libreitalic";
     font-size: 0.8em;
-    text-decoration: none;
+    color: var(--accent-color);
+    text-decoration: italic;
 }
 
 .article-tags {
@@ -72,23 +72,18 @@
 
 
 .description {
-    margin: 2%;   
+    margin: 3%;   
 }
 
 .first-card {
-    overflow-x: hidden;
-    overflow-y: auto;
-    background-color: var(--card-background-selected);
-    box-shadow: var(--shadow-2);
+    font-size: 1em;
+    padding: 0 7% 0 7%;
+    
 }
 
+.first-card> p:first-child { font-size: 2em;}
 
-.category-title {
-    grid-area: 2/1;
-
-}
-
-.Podcast {
+.Season1 {
     box-shadow: var(--shadow-3);
     background-color: var(--card-background-other);
     .card-overlay {
@@ -98,3 +93,4 @@
 	background-color: var(--card-background-other);
     }
 }
+

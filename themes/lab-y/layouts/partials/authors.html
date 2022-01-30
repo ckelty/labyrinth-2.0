@@ -1,6 +1,6 @@
       {{ if .Params.author }}
       {{ $authors := .Params.author }}
-<span class="article-author">{{ delimit $authors ", " " and " }}</span>
+{{ delimit $authors ", " " and " }}
       {{ end }}
 
 
