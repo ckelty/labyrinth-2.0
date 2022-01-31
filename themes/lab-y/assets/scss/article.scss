@@ -43,6 +43,7 @@
 }
 
 
+
 .article-content {
     margin-top:10%;
 
@@ -52,6 +53,9 @@
         border-spacing: 0;
         margin-bottom: 1.5em;
         font-size: 0.7em;
+        @media only screen and (max-width: 768px){
+            font-size: 0.6em;
+        }
 
     }
     
@@ -60,8 +64,8 @@
         text-align: left;
         padding: 4px 8px 4px 10px;
         border: 1px solid #000;
-	word-wrap: break-word;
-	word-break: break-all;
+	    word-wrap: break-word;
+
     }
 
     td {
@@ -84,7 +88,7 @@
 .featured-image__article img{
     float: left;
     width: 35%;
-    margin: 5%;
+    margin: 5% 4% 2% 5%;
     @media only screen and (max-width: 620px){
         display: none;
     }

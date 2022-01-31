@@ -3,7 +3,7 @@
 <main>
   {{- partial "masthead.html" . -}}
   <div class="first-card">  {{ .Content }} </div>
-{{ range .Pages.ByWeight }}
+{{ range .Pages.ByWeight.Reverse }}
 {{- partial "card.html" . -}}
 {{ end }}
 </main>

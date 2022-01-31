@@ -37,6 +37,7 @@
 
 .menu__list {
     list-style: none;
+    line-height: 1.8em;
 }
 
 .menu__item {
@@ -45,10 +46,10 @@
   font-size: 3em;
   letter-spacing: 4px;
   text-decoration: none;
-  transition-duration: 1.25s;
+  transition-duration: 0.25s;
 }
 .menu__item:hover {
-    transform: rotate(5deg);
+    transform: translateX(-30px);
 }
 
 

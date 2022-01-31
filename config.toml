@@ -1,4 +1,4 @@
-baseURL = 'http://dev.labyrinth.garden/'
+baseURL = 'http://labyrinth.garden/'
 languageCode = 'en-us'
 title = 'The Labyrinth Project'
 description = "Exploring the Maze of Nature in Los Angeles."
@@ -9,7 +9,7 @@ images = ['/images/LabLogo-2.png']
   unsafe = true
 
 [params]
-
+images = ['/images/LabLogo-2.png', '/images/Palm1.png']
 logourl = '/images/LabLogo-2.png'
 description = 'Exploring the Maze of Nature in Los Angeles'
   [params.footer]
