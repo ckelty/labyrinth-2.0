@@ -16,11 +16,18 @@ description = 'Exploring the Maze of Nature in Los Angeles'
     since = 2018  
     customText = "Labyrinth is an ongoing research project housed in the Institute for Society and Genetics at UCLA. This site does not use cookies or collect any data. It's just a website."
     credits = "/categories/credits"
+  [params.assets]
+  favicon = "favicon.ico"
+  favicon16x16 = "/images/favicon-16x16.png"
+  favicon32x32 = "/images/favicon-32x32.png"
+  apple_touch_icon = "/images/apple-touch-icon.png"
+  safari_pinned_tab = "/images/safari-pinned-tab.svg"
 
 [taxonomies]
     category = 'categories'
     tag = 'tags'
     author = 'authors'
+
 
 [privacy]
   [privacy.disqus]
