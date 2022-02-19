@@ -1,0 +1,20 @@
+
+.search-form {
+    label {
+	position: absolute;
+        top: 15px;
+        left: 20px;
+        font-size: 1rem;
+    }
+    input {
+	padding: 10px 10px 10px;
+        border-radius: 10px;
+         }
+    
+}
+#results {
+    list-style-type: circle;
+    li{
+	font-size: 1.6em;
+    }
+}

@@ -17,7 +17,7 @@ description = 'Exploring the Maze of Nature in Los Angeles'
     customText = "Labyrinth is an ongoing research project housed in the Institute for Society and Genetics at UCLA. This site does not use cookies or collect any data. It's just a website."
     credits = "/categories/credits"
   [params.assets]
-  favicon = "favicon.ico"
+  favicon = "/images/favicon.ico"
   favicon16x16 = "/images/favicon-16x16.png"
   favicon32x32 = "/images/favicon-32x32.png"
   apple_touch_icon = "/images/apple-touch-icon.png"
@@ -88,5 +88,12 @@ description = 'Exploring the Maze of Nature in Los Angeles'
   title = 'credits'
   url = '/categories/credits'
   weight = -105
+
+[[menu.main]]
+  identifier = 'Search'
+  name = 'Search'
+  title = 'search'
+  url = '/search'
+  weight = -90
 
 

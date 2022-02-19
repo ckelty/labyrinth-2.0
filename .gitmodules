@@ -1,3 +1,6 @@
 [submodule "static/js/lunr.js"]
 	path = static/js/lunr.js
 	url = https://github.com/olivernn/lunr.js.git
+[submodule "themes/lab-y/static/js/lunr.js"]
+	path = themes/lab-y/static/js/lunr.js
+	url = https://github.com/olivernn/lunr.js.git
